@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "抖音助手",
+  "version": "0.1.206",
+  "description": "面向抖音网页版的关注账号、作品检查和本地视频库助手。",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "24": "icons/icon-24.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "debugger",
+    "sidePanel",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.douyin.com/*",
+    "https://www-hj.douyin.com/*",
+    "https://*.douyinvod.com/*",
+    "https://*.smtcdns.com/*",
+    "https://*.douyinpic.com/*",
+    "https://*.byteimg.com/*",
+    "https://*.snssdk.com/*",
+    "https://*.amemv.com/*",
+    "https://*.bytedance.com/*"
+  ],
+  "background": {
+    "service_worker": "assets/background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.douyin.com/*"
+      ],
+      "js": [
+        "assets/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "打开抖音助手",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "24": "icons/icon-24.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  }
+}
