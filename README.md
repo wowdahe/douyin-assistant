@@ -8,7 +8,7 @@
 
 **当前版本：0.1.206 · Chrome Manifest V3 扩展 · 中文侧边栏界面**
 
-[下载仓库 ZIP](https://github.com/wowdahe/douyin-assistant/archive/refs/heads/main.zip) · [安装步骤](#安装) · [提交问题](https://github.com/wowdahe/douyin-assistant/issues)
+[下载 v0.1.206 安装包](https://github.com/wowdahe/douyin-assistant/releases/download/v0.1.206/douyin-assistant-0.1.206.zip) · [所有发布版本](https://github.com/wowdahe/douyin-assistant/releases) · [下载仓库 ZIP](https://github.com/wowdahe/douyin-assistant/archive/refs/heads/main.zip) · [提交问题](https://github.com/wowdahe/douyin-assistant/issues)
 
 本仓库提供已经编译好的插件，下载后即可通过浏览器的“加载已解压的扩展程序”安装，无需安装 Node.js、运行 npm 或自行编译。
 
@@ -54,9 +54,9 @@
 
 ### 下载并加载
 
-1. 在本仓库页面的文件列表上方，点击绿色的 **Code** 按钮，再点击 **Download ZIP**。也可以点击本文顶部的“下载仓库 ZIP”。
-2. GitHub 会将当前仓库文件打包下载，文件名通常为 `douyin-assistant-main.zip`。下载完成后，**先解压 ZIP**。
-3. 将解压得到的 `douyin-assistant-main` 文件夹放到一个长期保留的位置，例如“文档/浏览器插件/抖音助手”，并确认文件夹内能直接看到 `manifest.json`。
+1. 推荐从本仓库的 **Releases** 下载 `douyin-assistant-0.1.206.zip`，或点击本文顶部的“下载 v0.1.206 安装包”。也可以点击仓库文件列表上方的 **Code → Download ZIP**，下载当前仓库文件。
+2. 下载完成后，**先解压 ZIP**。通过 Code 下载的文件名通常为 `douyin-assistant-main.zip`。
+3. 将解压后的插件文件夹放到一个长期保留的位置，例如“文档/浏览器插件/抖音助手”，并确认文件夹内能直接看到 `manifest.json`。
 4. 在 Chrome 地址栏输入 `chrome://extensions/` 并打开。
 5. **开启页面右上角的“开发者模式”**。开启后才会显示“加载已解压的扩展程序”等按钮。
 6. 点击 **“加载已解压的扩展程序”**，选择上一步解压并保存的、**直接包含 `manifest.json` 的文件夹**。
@@ -170,7 +170,7 @@ Chrome 加载的是磁盘上的这个文件夹，安装后请保留它。选择�
 ### 更新到新版本
 
 1. 停止正在运行的任务，导出一份插件数据备份。
-2. 回到本仓库，点击 **Code → Download ZIP** 下载最新仓库文件，解压后将其中的完整插件文件替换到原来加载的插件目录。
+2. 从本仓库的 **Releases** 下载新版本安装包，或通过 **Code → Download ZIP** 下载最新仓库文件；解压后将其中的完整插件文件替换到原来加载的插件目录。
 3. 到 `chrome://extensions/` 找到“抖音助手”，点击“重新加载”。
 4. 刷新已打开的抖音网页，关闭后重新打开插件侧边栏。
 5. 查看账号页顶部的前台、后台版本号，确认都更新到了目标版本。
